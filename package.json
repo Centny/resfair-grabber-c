@@ -1,0 +1,52 @@
+{
+  "name": "grabber-c",
+  "version": "1.0.0",
+  "description": "the resource fair grabber client",
+  "repository": {
+    "type": "git",
+    "url": "https://w.snows.io/resfair/grabber-c.git"
+  },
+  "keywords": [
+    "web grabber",
+    "mocha"
+  ],
+  "scripts": {
+    "test": "nyc mocha"
+  },
+  "nyc": {
+    "include": [
+      "lib/**/*.ts",
+      "lib/**/*.tsx"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  },
+  "author": "Centny",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jquery": "^3.2.5",
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3",
+    "source-map-support": "^0.4.15",
+    "ts-node": "^3.1.0",
+    "typescript": "^2.4.1"
+  },
+  "homepage": "https://w.snows.io/resfair/grabber-c.git",
+  "dependencies": {
+    "@types/jquery": "^3.2.5",
+    "@types/node": "^8.0.6",
+    "jquery": "^3.2.1"
+  }
+}
